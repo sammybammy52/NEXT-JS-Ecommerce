@@ -80,9 +80,9 @@ const Cart = () => {
             </div>
             <div className="btn-container">
               <button type="button" className="btn" >
-                <a href='/Checkout'>
+                <Link href='/Checkout'>
                 Proceed to Checkout
-                </a>
+                </Link>
                 
               </button>
             </div>
