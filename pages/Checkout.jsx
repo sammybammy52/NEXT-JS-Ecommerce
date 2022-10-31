@@ -85,7 +85,7 @@ const Checkout = () => {
         
         {
           cartItems.length >= 1 ? cartItems.map((item) => (
-            <div className='checkout-items-container'>
+            <div className='checkout-items-container' key={item._id}>
               <p className='product-price-checkout'><a href="#">{item.name}</a> <span className="price">N{item.price}</span> </p>
               <p className='cart-item-quantity'>Quantity: { item.quantity }</p>
             </div>

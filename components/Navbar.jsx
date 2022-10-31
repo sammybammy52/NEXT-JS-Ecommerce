@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className='navbar-container'>
         <p className='logo nav-items'>
-            <Link href="/">Seye's Store</Link>
+            <Link href="/">Seye&apos;s Store</Link>
         </p>
         <div className="userdiv nav-items">
         <div className="dropdown" >
@@ -24,7 +24,7 @@ const Navbar = () => {
           </div>
 
           
-          <div class="dropdown-content">
+          <div className="dropdown-content">
             {session ? (
               <>
                 <a href="#">Account</a>
@@ -34,7 +34,7 @@ const Navbar = () => {
             )
               : (
                 
-                  <a href='/Login'>Sign In</a>
+                  <Link href='/Login'>Sign In</Link>
                 
               )}
 

@@ -1,13 +1,12 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { toast } from 'react-hot-toast';
 import Cookies from 'js-cookie';
-import { useRouter } from 'next/router';
+
 
 const Context = createContext();
 
 export const StateContext = ({ children }) => {
 
-  const router = useRouter();
   const [showCart, setShowCart] = useState(false);
   const [cartItems, setCartItems] = useState(JSON.parse(Cookies.get('cart') || '[]'));
   const [totalPrice, setTotalPrice] = useState(JSON.parse(Cookies.get('totalPrice') || 0 ));
@@ -50,7 +49,12 @@ export const StateContext = ({ children }) => {
 
   const BuyNow = (product, quantity) => {
       onAdd(product,quantity);
-      router.push("/Checkout");
+      return {
+        redirect: {
+          destination: '/Checkout',
+          permanent: false,
+        }
+        }
 
 
   }
