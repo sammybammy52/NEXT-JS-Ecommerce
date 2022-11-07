@@ -246,6 +246,9 @@ width: 100%;
   width: 435px;
   height: 481px;
 }
+.hero-banner-image-mobile{
+  display: none;
+}
 
 
 
@@ -698,7 +701,7 @@ margin-top: 160px;
   margin-top: 10px;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:700px) {
  
   .hero-banner-container{
     height: 560px;
@@ -706,11 +709,19 @@ margin-top: 160px;
   }
 
   .hero-banner-image{
-    width: 70%;
-    height: 70%;
-    bottom: 0%;
-    right: 2%;
+    display: none;
+
   }
+  .hero-banner-image-mobile{
+    display: block;
+    position: absolute;
+
+    width: 60%;
+    height: 40%;
+    bottom: 10%;
+    right: 0%;
+  }
+
   .footer-banner-container{
     height: 560px;
     margin-top: 80px;
@@ -747,7 +758,7 @@ margin-top: 160px;
     line-height: 1.3;
   }
   .hero-banner-container h1{
-    font-size: 50px;
+    font-size: 45px;
   }
  .hero-banner-container h3{
     font-size: 40px;

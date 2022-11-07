@@ -6,7 +6,7 @@ import { Product, HeroBanner, FooterBanner  } from "../components"
 export default function Home({products, bannerData}) {
   return (
     <>
-      <HeroBanner HeroBanner={bannerData.length && bannerData[0]}/>
+      <HeroBanner HeroBanner={bannerData.length && bannerData[0]} mobileImg={ bannerData[1].image }/>
       { console.log(bannerData)}
 
       <div className="products-heading">
