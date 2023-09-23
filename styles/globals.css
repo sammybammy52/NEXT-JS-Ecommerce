@@ -300,6 +300,7 @@ text-align: end;
   color: white;
   width: 100%;
   margin-top: 120px;
+  margin-bottom: 80px;
 }
 .banner-desc{
   display: flex ;
@@ -701,6 +702,10 @@ margin-top: 160px;
   margin-top: 10px;
 }
 
+.bottom-nav{
+  display: none;
+}
+
 @media screen and (max-width:700px) {
  
   .hero-banner-container{
@@ -726,6 +731,7 @@ margin-top: 160px;
     height: 560px;
     margin-top: 80px;
     margin-left: 3px;
+    
   }
   .footer-banner-image{
     width: 250px;
@@ -778,6 +784,7 @@ margin-top: 160px;
     height: 350px;
   }
   .cart-container{
+    height: 101vh;
     width: 415px;
   padding: 4px;
   }
@@ -854,6 +861,10 @@ margin-top: 160px;
 .btn-container{
   width: 300px;
   margin: auto;
+}
+
+.bottom-nav{
+  display: block;
 }
 }
 

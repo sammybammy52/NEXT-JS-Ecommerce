@@ -2,7 +2,7 @@ import React from 'react'
 import Head from'next/head';
 import Navbar from './Navbar';
 import Footer from './Footer';
-
+import BottomNav from './BottomNav';
 const Layout = ({ children }) => {
   return (
     <div className="layout">
@@ -15,8 +15,8 @@ const Layout = ({ children }) => {
         <main className='main-container'>
            { children }
         </main>
-        <footer>
-            <Footer/>
+        <footer className='bottom-nav'>
+            <BottomNav/>
         </footer>
     </div>
   )
